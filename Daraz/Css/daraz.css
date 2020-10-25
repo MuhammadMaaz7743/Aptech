@@ -1,6 +1,12 @@
 body{
     margin: auto;
 }
+/*.headerfix{
+    position: fixed;
+}
+.logoSer{
+    background-color: white;
+}*/
 .header{
     display: flex;
     background-color: rgba(179, 175, 175, 0.226);
@@ -225,29 +231,129 @@ ul {
     margin-left: 315px;
     margin-top: -30px;
 }
-.button {
-    height: 35px;
-    width: 110px;
-    color: white;
-    cursor: pointer;
-    border-radius: 2px;
+p.solid {
+    color: rgb(243, 111, 54);
     font-family: 'Roboto', "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
-    font-size: 14px;
-  }
-  .shopmorebtn {
-    display: flex;
-    height: 35px;
-    width: 110px;
-    color: white;
-    cursor: pointer;
+    Font-size: 14px;
+    border: solid 2px;
+    width: 100px;
+    text-align: center;
     border-radius: 2px;
-    font-family: 'Roboto', "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    margin-left: 1150px;
+    margin-top: -40px;
+    padding: 10px;
+}
+.line{
+    width: 1220px;
+    margin-left: 70px;
+    margin-top: 20px;
+    opacity: 0.3;
+}
+.onsale1{
+    margin-left: -10px;
+}
+.onsale2{
+    margin-left: 200px;
+    margin-top: -300px;
+}
+.onsale3{
+    margin-left: 400px;
+    margin-top: -300px;
+}
+.onsale4{
+    margin-left: 600px;
+    margin-top: -310px;
+}
+.onsale5{
+    margin-left: 800px;
+    margin-top: -330px;
+}
+.onsale6{
+    margin-left: 1000px;
+    margin-top: -320px;
+}
+.collection{
+    color: rgb(66, 66, 66);
+    font-family:'Roboto';
+    font-size: 22px;
+    margin-left: 90px;
+    margin-top: 5px;
+}
+.shopmore{
+    font-family: 'Roboto';
     font-size: 14px;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #f57224;
-    color: #f57224;
-    margin-left: 1155px;
-  }
-
+    color: #1A9CB7;
+    font-weight: bold;
+    margin-left: 1180px;
+}
+.shopmore1{
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #1A9CB7;
+    margin-left: 85px;
+    margin-top: -25px;
+}
+.collectionimg1{
+    margin-left: 80px; 
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    width: 300px;
+}
+.collectionimg2{
+    margin-left: 382px;
+    margin-top: -151px; 
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    width: 300px;
+}
+.collectionimg3{
+    margin-left: 684px;
+    margin-top: -149px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    width: 300px;
+}
+.collectionimg4{
+    margin-left: 986px;
+    margin-top: -150px; 
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 300px;
+}
+.collectionimg5{
+    margin-left: 80px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 300px;
+}
+.collectionimg6{
+    margin-left: 382px;
+    margin-top: -148px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 300px;
+}
+.collectionimg7{
+    margin-left: 684px;
+    margin-top: -148px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 300px;
+}
+.collectionimg8{
+    margin-left: 986px;
+    margin-top: -150px; 
+    width: 300px;
+}
 
