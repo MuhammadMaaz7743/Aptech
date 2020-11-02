@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        function square(num)
+        {
+            return num*num;
+        }
+        var squ1 = square(5);
+        document.writeln(squ1);
+
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        function cube(numb)
+        {
+            return numb * numb * numb;
+        }
+        var cube1 = cube(5);
+        document.writeln(cube1);
+
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+
+        var ab = function(number){
+            return number*number*number;
+        }
+        document.writeln(ab(3));
+
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        function write(fn){
+            fn();
+        }
+        write(function(){
+            document.writeln("maaz");
+        });
+
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        write(() => { document.write("ahsan")});
+
+
+        
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        var fullName = "muhammad maaz aptech navttac".split(' '),
+        
+        lastName = fullName[fullName.length - 1];
+        document.writeln(lastName);
+
+
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        //object
+        var std1 = {name:"Ali", age:21, mobileno: 3222222222};
+        var std2 = {name:"Bilal", age:23, mobileno: 3444444444};
+        document.writeln(std2.name);
+
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        var mobiles =[
+        mob1 = {Com_name:"Huawei ", name:"P30 Pro", Rupees: 157600},
+        mob2 = {Com_name:"Huawei ", name:"MAT 20 Pro", Rupees: 119999},
+        mob3 = {Com_name:"Huawei ", name:"P20 Pro", Rupees: 99999},
+        mob4 = {Com_name:"Huawei ", name:"P30", Rupees: 89999}
+        ];
+
+        document.writeln(mob1.name+"    "+ mob1.Rupees);
+        document.writeln("<br>")
+        document.writeln(mob2.name+"    "+mob2.Rupees);
+        document.writeln("<br>")
+        document.writeln(mob3.name+"    "+mob3.Rupees);
+        document.writeln("<br>")
+        document.writeln(mob4.name+"    "+mob4.Rupees);
+
+
+        var ul = document.querySelector('ul');
+        ul.innerHTML += "<li>"+ mobiles[0]. name+"</li>";document.writeln("<br>")
+        ul.innerHTML += "<li>"+ mobiles[1]. name+"</li>";
+        ul.innerHTML += "<li>"+ mobiles[2]. name+"</li>";
+        ul.innerHTML += "<li>"+ mobiles[3]. name+"</li>";
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        for(var i=0;i < mobiles.length;i++){
+            ul.innerHTML += "<li>"+ mobiles[i]. name+"</li>";
+        }
+
+
+    </script>
+</body>
+</html>
