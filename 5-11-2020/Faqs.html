@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs Assignment</title>
+    <script src="C:/Users/admin/Desktop/WEB Maaz/jquery-3.5.1.min.js"></script>
+    <style>
+    .faq li {
+      padding:20px; 
+      }
+    
+    .faq li.q {
+      background:gray;
+      font-weight:bold;
+      font-size:120%;
+      border-bottom:1px #ddd solid;
+      cursor:pointer;
+      }
+
+    .faq li.a {
+      background:#3BB0D6;
+      display:none;
+      color:#fff;
+      }
+    </style>
+</head>
+<body>
+    <script>
+      var action ='click';
+
+$(document).ready(function(){
+  $('li.q').on(action,function(){
+    $(this).next().slideToggle(500)
+    .siblings('li.a').slideUp();
+  });
+});
+
+    </script>
+
+   <ul class="faq">
+  <li class="q">
+    How do clinicians get access to SARS-CoV-2 viral testing?
+  </li>
+  <li class="a">Clinicians can access laboratory tests for SARS-CoV-2, the virus that causes COVID-19, through clinical laboratories performing tests authorized or intended to be authorized by the U.S. Food and Drug Administration (FDA) under an Emergency Use Authorization (EUA). Clinicians should consult with the laboratories that routinely perform their diagnostic services to see how best to access SARS-CoV-2 testing.</li>
+  <li class="q">
+    Once packaging of the samples is complete should staff members decontaminate the work area?
+  </li>
+  <li class="a">Decontaminate work surfaces and equipment with appropriate disinfectants. Use EPA-registered hospital disinfectants with label claims to be effective against SARS-CoV-2. Follow manufacturer's recommendations for use, such as dilution, contact time, and safe handling.</li>
+  <li class="q">
+    What procedures can generate aerosols and droplets?
+  </li>
+  <li class="a">Many routine laboratory procedures can potentially generate aerosols and droplets that are often undetectable. The following laboratory procedures have been associated with the generation of infectious aerosols and droplets: centrifugation, pipetting, vortexing, mixing, shaking, sonicating, removing caps, decanting liquids, preparing smears, flaming slides, aliquoting and loading specimens, loading syringes, manipulating needles, syringes or sharps, aspirating and transferring blood and body fluids, subculturing blood culture bottles, spilling specimens, and cleaning up spills.</li>
+</ul>
+
+</body>
+</html>

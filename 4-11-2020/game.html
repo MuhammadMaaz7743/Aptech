@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="C:/Users/admin/Desktop/WEB Maaz/jquery-3.5.1.min.js"></script>
+    <style>
+        h1{
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // setInterval(function(){
+        //     document.getElementById('c').innerHTML+= "AHSAN";
+        // },1000);
+
+        var i = 1;
+        setInterval(function(){
+             document.getElementById('boy').src ="C:/Users/admin/Desktop/WEB Maaz/4-11-2020/img/"+ i +".png";
+            
+            i++;
+
+            if(i > 4)
+                i = 1;
+         },5000);
+
+    </script>
+    <img src="" id="boy" alt="image"></h1>
+</body>
+</html>
