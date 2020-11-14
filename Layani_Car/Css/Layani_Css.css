@@ -137,3 +137,9 @@ ul, ol {
     visibility: hidden;
     transition: .22s ease;
 }
+p {
+  padding-top: 1rem;
+}
+.row {
+  padding-top: 4rem;
+}
