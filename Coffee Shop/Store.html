@@ -37,6 +37,21 @@
 
 
     <style>
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 50%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
         @media (min-width: 800px) and (max-width: 850px) {
             .navbar:not(.top-nav-collapse) {
                 background: #1C2331 !important;
@@ -294,90 +309,59 @@
     </nav>
     <!-- Navbar -->
 
-    <!-- Full Page Intro -->
-    <div class="view"
-        style="background-image: url('Images/Main.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <main>
+        <!-- Full Page Intro -->
+        <div class="view"
+            style="background-image: url('Images/Main.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-        <div class="about-section"></div>
-        <div class="about-section"></div>
+            <div class="about-section"></div>
+            <div class="about-section"></div>
 
-        <div class="container">
-            <div class="row" style="color: white;">
-                <div class="col-md-6">
-                    <div>
-                        <div class="panel panel-default">
-                            <div class="text-center header">Our Branches</div>
-                            <div class="panel-body text-center">
-                                <h4>Address</h4>
-                                <div>
-                                    Gulistan-e-Johar<br />
-                                </div>
-                                <hr />
-                                <script>
-                                    jQuery(function ($) {
-                                        function init_map1() {
-                                            var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
-                                            var mapOptions = {
-                                                center: myLocation,
-                                                zoom: 16
-                                            };
-                                            var marker = new google.maps.Marker({
-                                                position: myLocation,
-                                                title: "Property Location"
-                                            });
-                                            var map = new google.maps.Map(document.getElementById("map1"),
-                                                mapOptions);
-                                            marker.setMap(map);
-                                        }
-                                        init_map1();
-                                    });
-                                </script>
-                                <div id="map1" class="map">
+            <div class="container">
+                <div class="row" style="color: white;">
+                    <div class="col-md-6" style="padding:10px;">
+                        <div>
+                            <div class="panel panel-default">
+                                <div class="text-center header">Our Branches</div>
+                                <div class="panel-body text-center">
+                                    <h4>Address</h4>
+                                    <div>
+                                        Gulistan-e-Johar<br />
+                                    </div>
+                                    <hr />
+                                    <div class="container-fluid">
+                                        <div class="map-responsive">
+                                            \<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9975328531905!2d67.05275461447766!3d24.8639338512429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e859be230bb%3A0xd109a50664ecebd9!2sGloria%20Jean&#39;s%20Coffees%20SMCHS!5e0!3m2!1sen!2s!4v1606549474550!5m2!1sen!2s"  width="510vw" height="300vw"></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <div class="panel panel-default">
-                            <div class="text-center header">Our Branches</div>
-                            <div class="panel-body text-center">
-                                <h4>Address</h4>
-                                <div>
-                                    Defence<br />
-                                </div>
-                                <hr />
-                                <script>
-                                    jQuery(function ($) {
-                                        function init_map1() {
-                                            var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
-                                            var mapOptions = {
-                                                center: myLocation,
-                                                zoom: 16
-                                            };
-                                            var marker = new google.maps.Marker({
-                                                position: myLocation,
-                                                title: "Property Location"
-                                            });
-                                            var map = new google.maps.Map(document.getElementById("map2"),
-                                                mapOptions);
-                                            marker.setMap(map);
-                                        }
-                                        init_map1();
-                                    });
-                                </script>
-                                <div id="map2" class="map">
+                    <div class="col-md-6" style="padding:10px;">
+                        <div>
+                            <div class="panel panel-default">
+                                <div class="text-center header">Our Branches</div>
+                                <div class="panel-body text-center">
+                                    <h4>Address</h4>
+                                    <div>
+                                        Defence<br />
+                                    </div>
+                                    <hr />
+                                    <div class="container-fluid">
+                                        <div class="map-responsive">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.798402983885!2d67.02668221447647!3d24.80235575369338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d0a286d40ed%3A0xbbf17111707199d7!2sGloria%20Jean&#39;s%20Coffees%20Dolmen!5e0!3m2!1sen!2s!4v1606549266444!5m2!1sen!2s" width="510vw" height="300vw"></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
         </div>
-    </div>
-
-
+    </main>
     </div>
     <!-- Full Page Intro -->
     <!--Footer-->

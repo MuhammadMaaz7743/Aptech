@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
 
     <!-- Logo -->
     <link rel="icon" href="Images/logo.png" type="image/x-icon" />
@@ -59,14 +60,46 @@
                 background-color: #1C2331
             }
         }
+        h2 {
+            font-family: Arial, Verdana;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #854442;
+            text-transform: uppercase;
+        }
 
-        .vl {
-            border-left: 6px solid green;
-            height: 5vw;
+        .accordion-section .panel-default>.panel-heading {
+            border: 0;
+            background: transparent;
+            padding: 0;
+        }
+
+        .accordion-section .panel-default .panel-title a {
+            display: block;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+
+        .accordion-section .panel-default .panel-title a:after {
+            font-family: 'FontAwesome';
+            font-style: normal;
+            font-size: 3rem;
+            content: "\f106";
+            color: #BE9B7B;
+            float: right;
+            margin-top: -12px;
+        }
+
+        .accordion-section .panel-default .panel-title a.collapsed:after {
+            content: "\f107";
+        }
+
+        .accordion-section .panel-default .panel-body {
+            font-size: 1.2rem;
         }
     </style>
     <script>
-        
+
     </script>
 </head>
 
@@ -105,22 +138,23 @@
                 <!-- Left -->
                 <ul class="navbar-nav mr-auto ml-auto" style="font-family: Roboto;">
                     <li class="nav-item">
-                        <a class="nav-link"oncontextmenu="return false;" href="Home.html">Home</a>
+                        <a class="nav-link" oncontextmenu="return false;" href="Home.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" oncontextmenu="return false;" href="Products.html">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"oncontextmenu="return false;" href="Contact.html">Contacts</a>
+                        <a class="nav-link" oncontextmenu="return false;" href="Contact.html">Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"oncontextmenu="return false;" href="About us.html">About Us</a>
+                        <a class="nav-link" oncontextmenu="return false;" href="About us.html">About Us</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link"oncontextmenu="return false;"  style="border-bottom: 3px solid white;" href="Faqs.html" >FAQs<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" oncontextmenu="return false;" style="border-bottom: 3px solid white;"
+                            href="Faqs.html">FAQs<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"oncontextmenu="return false;" href="Store.html">Store</a>
+                        <a class="nav-link" oncontextmenu="return false;" href="Store.html">Store</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" target="_blank">
@@ -215,145 +249,191 @@
         </div>
     </nav>
     <!-- Navbar -->
+    <main>
+        <!-- Full Page Intro -->
+        <div class="view"
+            style="background-image: url('Images/Main.jpg'); background-repeat: no-repeat; background-size: cover;">
+            <br>
+            <br>
+            <br>
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center mt-5">
 
-    <!-- Full Page Intro -->
-    <div class="view"
-        style="background-image: url('Images/Main.jpg'); background-repeat: no-repeat; background-size: cover;">
+                <!-- Content -->
+                <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+                    <div class="container">
 
-        <!-- Mask & flexbox options-->
-        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-            
-            <!-- Content -->
-            <div class="container py-3 mt-5 pt-5" style="margin-bottom: -40vw;">
-                <div class="row">
-                    <div class="col-10 mx-auto">
-                        <div class="accordion" id="faqExample">
-                            <div class="card">
-                                <div class="card-header p-2" id="headingOne">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #854442;">
-                                          Q: Where are you located?
-                                        </button>
-                                      </h5>
+                        <h2>Frequently Asked Questions </h2>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default" style="color: white;">
+                                <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+                                    <h3 class="panel-title"style="color: white;">
+                                        <a class="collapsed" role="button" title="" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapse0" aria-expanded="true"
+                                            aria-controls="collapse0" style="color: white;">
+                                            What are the benefits of Solodev CMS?
+                                        </a>
+                                    </h3>
                                 </div>
-            
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
-                                    <div class="card-body">
-                                        <b>Answer:</b> 402 S Lafayette Ave in Royal Oak, Michigan.  We are on the Southwest corner on the same intersection as the Royal Oak Music Theater.
+                                <div id="collapse0" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading0">
+                                    <div class="panel-body px-3 mb-4">
+                                        <p>With Solodev CMS, you and your visitors will benefit from a finely-tuned
+                                            technology stack that drives the highest levels of site performance, speed
+                                            and engagement - and contributes more to your bottom line. Our users fell in
+                                            love with:</p>
+                                        <ul>
+                                            <li>Light speed deployment on the most secure and stable cloud
+                                                infrastructure available on the market.</li>
+                                            <li>Scalability – pay for what you need today and add-on options as you
+                                                grow.</li>
+                                            <li>All of the bells and whistles of other enterprise CMS options but
+                                                without the design limitations - this CMS simply lets you realize your
+                                                creative visions.</li>
+                                            <li>Amazing support backed by a team of Solodev pros – here when you need
+                                                them.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header p-2" id="headingTwo">
-                                    <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #854442;">
-                                      Q: So you’re a coffee shop?
-                                    </button>
-                                  </h5>
+
+                            <div class="panel panel-default" style="color: white;">
+                                <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" title="" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapse1" aria-expanded="true"
+                                            aria-controls="collapse1" style="color: white;">
+                                            How easy is it to build a website with Solodev CMS?
+                                        </a>
+                                    </h3>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
-                                    <div class="card-body">
-                                        Yes, we are open to the public 7 days a a week featuring Gourmet Coffee from Kalamazoo’s Water Street Coffee Roasters, fresh baked goods from Ferndale’s New York Bagel and sandwiches, wraps and salads from Detroit’s Fresh Corner Cafe.  We also feature great hot and cold coffee drinks, hot teas, iced teas, breakfast sandwiches and delicious smoothies.
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading1">
+                                    <div class="panel-body px-3 mb-4">
+                                        <p>Building a website is extremely easy. With a working knowledge of HTML and
+                                            CSS you will be able to have a site up and running in no time.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header p-2" id="headingThree">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"style="color: #854442;">
-                                          Q. I thought you were a coworking space?
-                                        </button>
-                                      </h5>
+
+                            <div class="panel panel-default"style="color: white;">
+                                <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" title="" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapse2" aria-expanded="true"
+                                            aria-controls="collapse2"style="color: white;">
+                                            What is the uptime for Solodev CMS?
+                                        </a>
+                                    </h3>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
-                                    <div class="card-body">
-                                        That too.  We offer space for memberships and business services to start ups and entrepreneurs.  Each membership level includes preferred internet, blocks of hours to reserve our private offices or tables in our coworking corner.  Our higher membership levels even offer a private mailbox to have your mail delivered here and/or advertising opportunities to promote your brand in our store, on our website and on our social media.  Visit our Memberships page to see which option might be right for you.
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading2">
+                                    <div class="panel-body px-3 mb-4">
+                                        <p>Using Amazon AWS technology which is an industry leader for reliability you
+                                            will be able to experience an uptime in the vicinity of 99.95%.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header p-2" id="headingThree">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #854442;">
-                                          Q. But you have free Wi-Fi, right?
-                                        </button>
-                                      </h5>
+
+                            <div class="panel panel-default"style="color: white;">
+                                <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" title="" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapse3" aria-expanded="true"
+                                            aria-controls="collapse3"style="color: white;">
+                                            Can Solodev CMS handle multiple websites for my company?
+                                        </a>
+                                    </h3>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
-                                    <div class="card-body">
-                                        Yes, we have Wi-Fi and it is free.  Members just get preferred access (it’s faster).
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading3">
+                                    <div class="panel-body px-3 mb-4">
+                                        <p>Yes, Solodev CMS is built to handle the needs of any size company. With our
+                                            Multi-Site Management, you will be able to easily manage all of your
+                                            websites.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-            
-                    </div>
-                </div>
-                <!--/row-->
-            </div>
-            <!--container-->
 
+                    </div>
+                </section>
+                <!--container-->
+            </div>
         </div>
         <!-- Mask & flexbox options-->
 
-        
+    </main>
     </div>
     <!-- Full Page Intro -->
-<!--Footer-->
-<footer class="section footer-classic context-dark bg-image " style="background-image:linear-gradient(to left, #BE9B7B , #854442);">
-    <div class="container">
-      <div class="row row-30">
-        <div class="col-md-4 col-xl-5">
-            <br>
-          <div class="pr-xl-4"><a class="brand ml-5" href="#"><img class="brand-logo-light" src="Images/lo.png" alt="" height="100vw" ></a>
-            <p  style="color: white;">A coffeehouse, coffee shop, or café is an establishment that primarily serves coffee (of various types, e.g. espresso, latte, cappuccino). Some coffeehouses may serve cold drinks such as iced coffee and iced tea; in continental Europe, cafés serve alcoholic drinks.</p>
-            <!-- Rights-->
-            <p class="rights"  style="color: white;"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Maaz</span><span>. </span><span>All Rights Reserved.</span></p>
-          </div>
+    <!--Footer-->
+    <footer class="section footer-classic context-dark bg-image "
+        style="background-image:linear-gradient(to left, #BE9B7B , #854442);">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <br>
+                    <div class="pr-xl-4"><a class="brand ml-5" href="#"><img class="brand-logo-light"
+                                src="Images/lo.png" alt="" height="100vw"></a>
+                        <p style="color: white;">A coffeehouse, coffee shop, or café is an establishment that primarily
+                            serves coffee (of various types, e.g. espresso, latte, cappuccino). Some coffeehouses may
+                            serve cold drinks such as iced coffee and iced tea; in continental Europe, cafés serve
+                            alcoholic drinks.</p>
+                        <!-- Rights-->
+                        <p class="rights" style="color: white;"><span>©  </span><span
+                                class="copyright-year">2020</span><span> </span><span>Maaz</span><span>. </span><span>All
+                                Rights Reserved.</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <h5>Contacts</h5>
+                    <dl class="contact-list">
+                        <dt>Address:</dt>
+                        <dd style="color: white;">Gulistan-e-Johar Block#4 Karachi</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>email:</dt>
+                        <dd><a href="mailto:#" style="color: white;">mmaaz2516@gmail.com</a></dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>phones:</dt>
+                        <dd><a href="tel:#" style="color: white;">0324-2814526</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-xl-3 mt-5">
+                    <h5>Links</h5>
+                    <ul class="nav-list" style="color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link" oncontextmenu="return false;" href="Home.html"
+                                style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" oncontextmenu="return false;" href="Products.html"
+                                style="color: white;">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" oncontextmenu="return false;" href="Contact.html" target="_blank"
+                                style="color: white;">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" oncontextmenu="return false;" href="About us.html" target="_blank"
+                                style="color: white;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" oncontextmenu="return false;" href="Faqs.html" target="_blank"
+                                style="color: white;">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" oncontextmenu="return false;" href="Store.html" target="_blank"
+                                style="color: white;">Store</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mt-5">
-          <h5>Contacts</h5>
-          <dl class="contact-list">
-            <dt>Address:</dt>
-            <dd  style="color: white;">Gulistan-e-Johar Block#4 Karachi</dd>
-          </dl>
-          <dl class="contact-list">
-            <dt>email:</dt>
-            <dd><a href="mailto:#" style="color: white;">mmaaz2516@gmail.com</a></dd>
-          </dl>
-          <dl class="contact-list">
-            <dt>phones:</dt>
-            <dd><a href="tel:#" style="color: white;">0324-2814526</a>
-            </dd>
-          </dl>
-        </div>
-        <div class="col-md-4 col-xl-3 mt-5">
-          <h5>Links</h5>
-          <ul class="nav-list" style="color: white;">
-            <li class="nav-item">
-                <a class="nav-link" oncontextmenu="return false;" href="Home.html" style="color: white;">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" oncontextmenu="return false;" href="Products.html"style="color: white;">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" oncontextmenu="return false;" href="Contact.html" target="_blank"style="color: white;">Contacts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" oncontextmenu="return false;" href="About us.html" target="_blank"style="color: white;">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" oncontextmenu="return false;" href="Faqs.html" target="_blank"style="color: white;">FAQs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" oncontextmenu="return false;" href="Store.html" target="_blank" style="color: white;">Store</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-<!-- Footer -->
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>
