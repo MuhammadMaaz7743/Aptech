@@ -34,20 +34,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
 
     <style>
-        @media (min-width: 800px) and (max-width: 850px) {
-            .navbar:not(.top-nav-collapse) {
-                background: #1C2331 !important;
-            }
-        }
-
         .view,
         body,
         html {
             height: 100%
-        }
-
-        .navbar {
-            background-color: rgba(0, 0, 0, .2)
         }
 
         .page-footer,
@@ -59,11 +49,6 @@
             .navbar {
                 background-color: #854442;
             }
-        }
-
-        .vl {
-            border-left: 6px solid green;
-            height: 5vw;
         }
     </style>
     <script>
@@ -86,7 +71,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 500) {
+                $(".navbar").css('background', '#BE9B7B');
+            } else {
+                $(".navbar").css('background', 'transparent');
+            }
+        });
+    </script>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">

@@ -39,7 +39,7 @@
     <style>
         @media (min-width: 800px) and (max-width: 850px) {
             .navbar:not(.top-nav-collapse) {
-                background: #1C2331 !important;
+                background: #854442 !important;
             }
         }
 
@@ -47,10 +47,6 @@
         body,
         html {
             height: 100%
-        }
-
-        .navbar {
-            background-color: rgba(0, 0, 0, .2)
         }
 
         .page-footer,
@@ -63,73 +59,6 @@
                 background-color: #854442;
             }
         }
-
-        .form4 {
-            background-size: cover
-        }
-
-        .top {
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .form-bg {
-            background: rgba(68, 68, 65, 0.77);
-            padding: 20px;
-        }
-
-        .form {
-            padding: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-        }
-
-        .form-control {
-            border-top: 0px;
-            border-left: 0px;
-            border-right: 0px;
-            border-bottom: 1px solid #61615e;
-            background: transparent;
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            -o-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-        }
-
-        button.btn {
-            display: block;
-            padding: 11px 32px;
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            -o-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-            margin: 30px 0px;
-        }
-
-        .btn-blue {
-            background-color: #854442;
-            color: #fff;
-            border: 1px solid #BE9B7B;
-        }
-
-        .about-section {
-            padding: 40px;
-            text-align: center;
-        }
-
 
         h2 {
             text-align: center;
@@ -265,12 +194,21 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $(".navbar").css('background', '#BE9B7B');
+            } else {
+                $(".navbar").css('background', 'transparent');
+            }
+        });
+    </script>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
 
             <!-- Brand -->
-            <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+            <a class="navbar-brand" href="#">
                 <img src="Images/lo.png" style="width: 6vw;animation-delay: 1s;" class="mt-3">
             </a>
 
@@ -402,61 +340,7 @@
         <div class="view"
             style="background-image: url('Images/Main.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-            <div class="about-section"></div>
-            <div class="about-section"></div>
-
-            <h2 style="text-align:center; color: white;">About Us</h2>
-            <div class="row">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <div class="col-sm-10">
-                            <h4 style="color: white;">Our Story:</h4>
-                            <div class="card" style="background-color: transparent;">
-                                <div class="hovereffect">
-                                    <div class="overlay" style="color:white;">
-                                        <h2>We’ve been around the world for more than 40 years</h2>
-                                        <P>Did you know the first Gloria Jean’s opened in a small town outside of Chicago in 1979? Gloria Jean Kvetko was a determined young mom from Chicago with a dream to own a coffee shop where she could combine her passion for caffeine and meeting people.</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-10">
-                            <div class="card" style="background-color: transparent;">
-                                <div class="hovereffect">
-                                    <div class="overlay" style="color:white;">
-                                        <h2>Serving more than 90,000 coffees a day all over the world</h2>
-                                        <P>Fast forward a few years and Gloria Jean’s is one of the most loved coffee
-                                            houses in the world. Every day the Gloria Jean’s team serves up more than
-                                            90,000 delicious coffees in more than 50 countries around the world.
-
-                                            Gloria Jean’s goes from strength to strength by setting the standard when it
-                                            comes to sourcing quality beans, training the best baristas and serving up
-                                            great coffee with a smile.</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-10">
-                            <h4 style="color: white;">Our Vision Mission and Values:</h4>
-                            <div class="card" style="background-color: transparent;">
-                                <div class="hovereffect">
-                                    <div class="overlay" style="color:white;">
-                                        <P>Ensuring product quality is choosing not to take the easy way. It’s not the
-                                            fast way. It’s the right way, and it creates the best coffee possible.
-
-                                            We understand coffee is more than a pick me up. If we want to make someone’s
-                                            day, we’ve got to give a little bit of ourselves in every cup we serve.
-                                            Every Gloria Jean’s Coffees crew member is a keeper of that single cherry,
-                                            from the time it gets picked up until the time it’s brewed, but what makes
-                                            normal beautiful is the goodness that sits on top of a cup of coffee. </P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <div style="padding: 50px;"></div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
             <script>
                 $(document).ready(function () {
@@ -486,17 +370,23 @@
                 <h2 style="color: #BE9B7B;">Our Partners/ Our Clients</h2>
                 <section class="customer-logos slider">
                     <div class="slide"><img
-                            src="https://www.espressocoffeeshop.com/image/cache/catalog/969.coffee/969.coffee-AG-logo-175x175.jpg"></div>
-                    <div class="slide"><img src="https://www.espressocoffeeshop.com/image/cache/catalog/Acaia/acaia_logo_transparent_65a61f7c-77f4-4b5a-bfa2-deb6dd6c8ab8_238x-175x175.png"></div>
-                    <div class="slide"><img src="https://www.espressocoffeeshop.com/image/cache/catalog/Anfim/ANFIM_Logo_SOP-175x175.jpg">
+                            src="https://www.espressocoffeeshop.com/image/cache/catalog/969.coffee/969.coffee-AG-logo-175x175.jpg">
+                    </div>
+                    <div class="slide"><img
+                            src="https://www.espressocoffeeshop.com/image/cache/catalog/Acaia/acaia_logo_transparent_65a61f7c-77f4-4b5a-bfa2-deb6dd6c8ab8_238x-175x175.png">
+                    </div>
+                    <div class="slide"><img
+                            src="https://www.espressocoffeeshop.com/image/cache/catalog/Anfim/ANFIM_Logo_SOP-175x175.jpg">
                     </div>
                     <div class="slide"><img
                             src="https://www.espressocoffeeshop.com/image/cache/catalog/Barista%20Hustle/bh-logo-header-95_512-175x175.png">
                     </div>
                     <div class="slide"><img
-                            src="https://www.espressocoffeeshop.com/image/cache/catalog/Chemex/logo-2-175x175.png"></div>
+                            src="https://www.espressocoffeeshop.com/image/cache/catalog/Chemex/logo-2-175x175.png">
+                    </div>
                     <div class="slide"><img
-                            src="https://www.espressocoffeeshop.com/image/cache/catalog/dalla%20corte/logo-175x175.png"></div>
+                            src="https://www.espressocoffeeshop.com/image/cache/catalog/dalla%20corte/logo-175x175.png">
+                    </div>
                     <div class="slide"><img
                             src="https://www.espressocoffeeshop.com/image/cache/catalog/eureka/Logo/80C0C052-B606-463C-8DDF-DE1FD4D9176D-175x175.png">
                     </div>
@@ -505,6 +395,62 @@
                     </div>
                 </section>
             </div>
+            <h2 style="text-align:center; color: white;">About Us</h2>
+            <div class="row" >
+                <div class="container-fluid" >
+                    <div class="row justify-content-center">
+                        <!-- <div class="col-sm-10" style="background-color:white; opacity: 0.3;">
+                            <h4 style="color: black;">Our Story:</h4>
+                            <div class="card" style="background-color: transparent;">
+                                <div class="hovereffect">
+                                    <div class="overlay" style="color:black;">
+                                        <h2>We’ve been around the world for more than 40 years</h2>
+                                        <P>Did you know the first Gloria Jean’s opened in a small town outside of
+                                            Chicago in 1979? Gloria Jean Kvetko was a determined young mom from Chicago
+                                            with a dream to own a coffee shop where she could combine her passion for
+                                            caffeine and meeting people.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="col-sm-10"style="background:white; opacity: 0.8;">
+                            <h4 style="color: black;">Serving more than 90,000 coffees a day all over the world:</h4>
+                            <div class="card" style="background-color: transparent;">
+                                <div class="hovereffect">
+                                    <div class="overlay" style="color:black;">
+                                        <P>Fast forward a few years and Gloria Jean’s is one of the most loved coffee
+                                            houses in the world. Every day the Gloria Jean’s team serves up more than
+                                            90,000 delicious coffees in more than 50 countries around the world.
+
+                                            Gloria Jean’s goes from strength to strength by setting the standard when it
+                                            comes to sourcing quality beans, training the best baristas and serving up
+                                            great coffee with a smile.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-sm-10" style="background:white; opacity: 0.8;">
+                            <h4 style="color: black;">Our Vision Mission and Values:</h4>
+                            <div class="card" style="background-color: transparent;">
+                                <div class="hovereffect">
+                                    <div class="overlay" style="color:black;">
+                                        <P>Ensuring product quality is choosing not to take the easy way. It’s not the
+                                            fast way. It’s the right way, and it creates the best coffee possible.
+
+                                            We understand coffee is more than a pick me up. If we want to make someone’s
+                                            day, we’ve got to give a little bit of ourselves in every cup we serve.
+                                            Every Gloria Jean’s Coffees crew member is a keeper of that single cherry,
+                                            from the time it gets picked up until the time it’s brewed, but what makes
+                                            normal beautiful is the goodness that sits on top of a cup of coffee. </P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <br>
         </div>
     </main>
@@ -560,19 +506,19 @@
                                 style="color: white;">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="Contact.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="Contact.html"
                                 style="color: white;">Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="About us.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="About us.html"
                                 style="color: white;">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="Faqs.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="Faqs.html"
                                 style="color: white;">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="Store.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="Store.html"
                                 style="color: white;">Store</a>
                         </li>
                     </ul>

@@ -37,6 +37,8 @@
 
 
     <style>
+
+        /* For Map */
         .map-responsive {
             overflow: hidden;
             padding-bottom: 50%;
@@ -52,9 +54,10 @@
             position: absolute;
         }
 
+        /* For Screen */
         @media (min-width: 800px) and (max-width: 850px) {
             .navbar:not(.top-nav-collapse) {
-                background: #1C2331 !important;
+                background: #854442 !important;
             }
         }
 
@@ -63,11 +66,6 @@
         html {
             height: 100%
         }
-
-        .navbar {
-            background-color: rgba(0, 0, 0, .2)
-        }
-
         .page-footer,
         .top-nav-collapse {
             background-color: #854442;
@@ -78,80 +76,10 @@
                 background-color: #854442;
             }
         }
-
-        .form4 {
-            background-size: cover
-        }
-
-        .top {
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .form-bg {
-            background: rgba(68, 68, 65, 0.77);
-            padding: 20px;
-        }
-
-        .form {
-            padding: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-        }
-
-        .form-control {
-            border-top: 0px;
-            border-left: 0px;
-            border-right: 0px;
-            border-bottom: 1px solid #61615e;
-            background: transparent;
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            -o-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-        }
-
-        button.btn {
-            display: block;
-            padding: 11px 32px;
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            -o-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-            margin: 30px 0px;
-        }
-
-        .btn-blue {
-            background-color: #854442;
-            color: #fff;
-            border: 1px solid #BE9B7B;
-        }
-
         .about-section {
             padding: 40px;
             text-align: center;
         }
-
-        .map {
-            min-width: 300px;
-            min-height: 300px;
-            width: 100%;
-            height: 100%;
-        }
-
         .header {
             background-color: #BE9B7B;
             color: #854442;
@@ -176,12 +104,21 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+        <script>
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 70) {
+                    $(".navbar").css('background', '#BE9B7B');
+                } else {
+                    $(".navbar").css('background', 'transparent');
+                }
+            });
+        </script>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
 
             <!-- Brand -->
-            <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+            <a class="navbar-brand" href="#">
                 <img src="Images/lo.png" style="width: 6vw;animation-delay: 1s;" class="mt-3">
             </a>
 
@@ -363,6 +300,7 @@
                     </div>
                 </div>
             </div>
+            <div style="padding: 20px;"></div>
             <br>
         </div>
     </main>
@@ -415,19 +353,19 @@
                                 style="color: white;">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="Contact.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="Contact.html"
                                 style="color: white;">Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="About us.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="About us.html"
                                 style="color: white;">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="Faqs.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="Faqs.html"
                                 style="color: white;">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" oncontextmenu="return false;" href="Store.html" target="_blank"
+                            <a class="nav-link" oncontextmenu="return false;" href="Store.html" 
                                 style="color: white;">Store</a>
                         </li>
                     </ul>
